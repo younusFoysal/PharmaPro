@@ -20,7 +20,7 @@ const Product = ({id, img, mname, dprice, price }) => {
                     <span className="text-sm md:text-base text-gray-500 line-through">${price}</span>
                 </div>
                 <button
-                    onClick={() => addToCart({ id, mname, dprice })}
+                    onClick={() => addToCart({ id, mname, dprice, img })}
                     className="w-full rounded-md bg-green-700 px-4 py-2 text-sm md:text-md font-medium text-white hover:bg-green-600 focus:outline-none">
                     Add to cart
                 </button>

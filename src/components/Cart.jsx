@@ -22,9 +22,8 @@ const Cart = () => {
     const total = (subtotal + parseFloat(taxes) + shipping).toFixed(2);
 
     return (
-        <div className="bg-gray-100 h-screen py-8">
+        <div className="py-2">
             <div className="container mx-auto px-4">
-                <h1 className="text-2xl font-semibold mb-4">Shopping Cart</h1>
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="md:w-3/4">
                         <div className="bg-white rounded-lg shadow-md p-6 mb-4">
@@ -45,7 +44,7 @@ const Cart = () => {
                                                 <div className="flex items-center">
                                                     <img
                                                         className="h-16 w-16 mr-4"
-                                                        src={item.image || "https://via.placeholder.com/150"}
+                                                        src={item.img }
                                                         alt={item.mname}
                                                     />
                                                     <span className="font-semibold">{item.mname}</span>
@@ -113,7 +112,7 @@ const Cart = () => {
                                 <span className="font-semibold">Total</span>
                                 <span className="font-semibold">${total}</span>
                             </div>
-                            <button className="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">
+                            <button className="bg-green-900 text-white py-2 px-4 rounded-lg mt-4 w-full hover:scale-105 duration-500 shadow-lg">
                                 Checkout
                             </button>
                         </div>
