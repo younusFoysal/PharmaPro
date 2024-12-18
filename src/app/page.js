@@ -1,11 +1,13 @@
+import Hero from "@/components/Hero";
+import Services from "@/components/services";
 
 
 export default function Home() {
   return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        Hello  Next Hero
+      <main className="flex min-h-screen flex-col items-center justify-between p-4">
 
-        This is a full stack web developer.
+        <Hero/>
+        <Services/>
 
       </main>
   );
