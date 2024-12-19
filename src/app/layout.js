@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import {CartProvider} from "@/hook/CartContext";
 import {Toaster} from "react-hot-toast";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({ weight: ['400', '500', '900'], subsets: ["latin"] });
 
@@ -24,6 +25,8 @@ export default function RootLayout({ children }) {
 
     <div className="">{children}</div>
         <Toaster />
+
+        <Footer/>
     </CartProvider>
 
     </body>

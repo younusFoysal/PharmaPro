@@ -2,6 +2,8 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/services";
 import Products from "@/components/Products";
+import CTA from "@/components/CTA";
+import Reviews from "@/components/Reviews";
 
 
 export default function Home() {
@@ -13,7 +15,9 @@ export default function Home() {
 
         <Hero/>
         <Services/>
-          <Products/>
+        <Products/>
+        <CTA/>
+          <Reviews/>
 
 
       </main>
